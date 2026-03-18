@@ -39,6 +39,7 @@ class Settings(BaseSettings):
     facebook_app_secret: str = Field(..., validation_alias="FACEBOOK_APP_SECRET")
     facebook_target_app_id: str = Field("263902037430900", validation_alias="FACEBOOK_TARGET_APP_ID")
     whatsapp_webhook_verify_token: str = Field(..., validation_alias="WHATSAPP_WEBHOOK_VERIFY_TOKEN")
+    whatsapp_business_account_id: str = Field(..., validation_alias="WHATSAPP_BUSINESS_ACCOUNT_ID")
     skip_webhook_signature_validation: bool = Field(False, validation_alias="SKIP_WEBHOOK_SIGNATURE_VALIDATION")
     skip_messaging_window_check: bool = Field(False, validation_alias="SKIP_MESSAGING_WINDOW_CHECK")
     default_template_name: str = Field(
